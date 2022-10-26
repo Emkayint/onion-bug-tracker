@@ -1,6 +1,6 @@
 
 import React from "react";
-import {BsFilter} from "react-icons/bs"
+import BugPage from "./BugPage";
 import EfficiencyCard from "./efficiency-card";
 
 export default function DashboardHome() {
@@ -17,7 +17,7 @@ export default function DashboardHome() {
         <EfficiencyCard text="Hello World" number="30" color="#333" />
         <EfficiencyCard text="Hello World" number="30" color="#333" />
       </div>
-      <div className="container-main bugs">
+      <div className="container-main bugs p-3">
         <div className="titles row p-3">
           <div className="col-lg-4 col-sm-5 col-md-3">BUG</div>
           <div className="col-lg-2">STATUS</div>
@@ -25,6 +25,9 @@ export default function DashboardHome() {
           <div className="col-lg-2">DUE</div>
           <div className="col-lg-2">REPORTER</div>
         </div>
+        <BugPage />
+        <BugPage />
+        <BugPage />
       </div>
     </div>
   );

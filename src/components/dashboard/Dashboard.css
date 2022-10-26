@@ -147,3 +147,24 @@
   font-size: .8rem;
   font-weight: 600;
 }
+
+.bug-name{
+  font-size: .7rem;
+}
+
+.id{
+  font-size: .7rem;
+  padding-left: 10px;
+  color: rgb(240, 149, 149);
+  font-weight: 600;
+}
+
+.bug-title{
+  font-weight: 800;
+  font-size: .7rem;
+}
+
+.bugs{
+  overflow-y: auto;
+  height: 60vh;
+}
