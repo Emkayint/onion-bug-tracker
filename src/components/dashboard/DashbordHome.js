@@ -11,11 +11,11 @@ export default function DashboardHome() {
         <div className="text">My Bugs</div>
         <div className="btn btn-primary csm-button">Report A new Bug</div>
       </div>
-      <div className="efficiency p-3 d-flex align-items-center flex-wrap justify-content-around">
-        <EfficiencyCard text="Hello World" number="30" color="#333" />
-        <EfficiencyCard text="Hello World" number="30" color="#333" />
-        <EfficiencyCard text="Hello World" number="30" color="#333" />
-        <EfficiencyCard text="Hello World" number="30" color="#333" />
+      <div className="efficiency p-3 d-flex align-items-center flex-wrap ">
+        <EfficiencyCard text="Hello World" number="30" color="#E3FDFD" />
+        <EfficiencyCard text="Hello World" number="30" color="#A6B1E1" />
+        <EfficiencyCard text="Hello World" number="30" color="#FC5185" />
+        <EfficiencyCard text="Hello World" number="30" color="#F5F5F5" />
       </div>
       <div className="container-main bugs p-3">
         <div className="titles row p-3">
