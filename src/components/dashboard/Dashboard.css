@@ -151,11 +151,11 @@
 }
 
 .bug-name{
-  font-size: .7rem;
+  font-size: .8rem;
 }
 
 .id{
-  font-size: .7rem;
+  font-size: .8rem;
   padding-left: 10px;
   color: rgb(240, 149, 149);
   font-weight: 600;
@@ -178,3 +178,12 @@
 .block{
   display: block;
 }
+
+.bug-btn{
+  font-size: .8rem;
+}
+
+.date, .due{
+  font-size: .8rem;
+}
+

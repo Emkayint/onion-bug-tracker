@@ -16,7 +16,7 @@ export default function BugCard(){
         </div>
         <div className="col-lg-2">
           <div className="container-main d-flex justify-content-center">
-            <span className="btn btn-primary">Failed QA</span>
+            <span className="btn btn-primary bug-btn">Failed QA</span>
           </div>
         </div>
         <div className="col-lg-2">
