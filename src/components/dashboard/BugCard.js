@@ -1,7 +1,7 @@
 import {BsChatDots} from "react-icons/bs"
 export default function BugCard(){
   return (
-    <div className="container-main card px-2 pt-2 mb-2">
+    <div className="container-main card bug-card px-2 pt-2 mb-2">
       <div className="row">
         <div className="col-lg-1">
           <div className="id">MER23</div>

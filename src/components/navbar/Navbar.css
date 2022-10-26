@@ -1,10 +1,12 @@
 
 .Navbar{
   background-color: rgba(0, 0, 0, .3);
+  color: #FC5185;
 }
 
 a{
   display: block;
+  color: #FC5185;
 }
 
 .Navbar header{
@@ -12,7 +14,7 @@ a{
   height: 15%;
   display: flex;
   align-items: center;
-  color: #FDFDBD;
+  color: #FC5185;
   font-size: 1.3rem;
   justify-content: center;
 }

@@ -10,15 +10,15 @@ export default function Navbar(){
       <header>
         <h3>Tracker</h3>
       </header>
-      <div className="container-main text-white px-4">
+      <div className="container-main px-4">
         <br />
         <p>My Space</p>
       </div>
-      <hr className="bg-white" />
+      <hr className="bg-secondary" />
 
       <div className="container-main px-4">
         <NavLink to="/hello">
-          <p className="text-white">
+          <p className="">
             <span className="pr-3">
               <BsFlagFill />
             </span>
@@ -26,7 +26,7 @@ export default function Navbar(){
           </p>
         </NavLink>
         <NavLink to="/hello">
-          <p className="text-white">
+          <p className="">
             <span className="pr-3">
               <BsBugFill />
             </span>
@@ -35,7 +35,7 @@ export default function Navbar(){
         </NavLink>
 
         <NavLink to="/hello">
-          <p className="text-white">
+          <p className="">
             <span className="pr-3">
               <BsLayersHalf />
             </span>
@@ -44,7 +44,7 @@ export default function Navbar(){
         </NavLink>
       </div>
       <div className="container-main h-100 settings">
-        <p className="text-warning"><span className="pr-3"><BsGearFill /></span> settings</p>
+        <p className=""><span className="pr-3"><BsGearFill /></span> settings</p>
       </div>
     </div>
   );

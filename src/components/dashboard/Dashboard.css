@@ -49,6 +49,11 @@
   
 }
 
+.titles{
+  color: #FC5185;
+  font-weight: bold;
+}
+
 .span1{
   background-color: black;
 }
@@ -68,10 +73,10 @@
   height: 15%;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid white;
   justify-content: center;
   padding-left: 10px;
   padding-right: 10px;
+  background-color: #1e2022;
 }
 .search input{
   height: 70%;
@@ -79,29 +84,36 @@
   border: none;
   padding-left: 10px;
   width: 100%;
+  color: white;
+  background-color: rgba(77, 72, 72, 0.4);
 }
+
+
 
 .header-home{
   height: 15%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(180, 176, 176);
+  background-color: rgba(0, 0, 0, .5);
 }
 
-.csm-button{
+.custom-button{
   height: fit-content;
+  background-color: #FC5185;
+  color: black;
 }
 
 .text{
   height: fit-content;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #00ADB5;
+  color: #FC5185;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .Navbar-Dash{
-  background-color: #EEEEEE;
-  padding: 20px;
-  color: #00ADB5;
+  background-color: #475466;
+  color: #EEEEEE;
+  /* border-bottom: 1px solid white; */
 }
 
 .icon{
@@ -142,9 +154,7 @@
   margin: 0;
 }
 
-.efficiency{
-  border-bottom: 1px solid rgb(187, 182, 182);
-}
+
 
 .bug-name{
   font-size: .8rem;
@@ -160,6 +170,7 @@
 .bug-title{
   font-weight: 800;
   font-size: .7rem;
+  color: #EEEEEE;
 }
 
 .bugs{
@@ -187,3 +198,7 @@
   background: #393E46;
 }
 
+.bug-card{
+  background-color: #222831;
+  color: white;
+}

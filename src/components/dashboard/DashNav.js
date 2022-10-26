@@ -13,8 +13,6 @@ export default function DashNav(){
           placeholder="Search with keywords"
         />
       </div>
-      <hr />
-
       <header className="header-dashboard">
         <div className="py-3 p px-3">PROJECTS</div>
         <div className="">
@@ -22,6 +20,7 @@ export default function DashNav(){
           <span className="span2"></span>
         </div>
       </header>
+      <hr  className="bg-secondary"/>
       <div className="projects px-3 py-2">
         <div className="nav-buttons">
           <div className="div">
