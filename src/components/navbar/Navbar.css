@@ -1,6 +1,6 @@
 
 .Navbar{
-  background-color: #9A1663;
+  background-color: #B1AFFF;
 }
 
 a{
@@ -12,7 +12,7 @@ a{
   height: 15%;
   display: flex;
   align-items: center;
-  color: wheat;
+  color: #FDFDBD;
   font-size: 1.3rem;
   justify-content: center;
 }

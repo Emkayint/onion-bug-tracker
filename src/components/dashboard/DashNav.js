@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function DashNav(){
   const [search, setSearch] = useState("")
   return (
-    <div className="container-main h-100">
+    <div className="container-main Navbar-Dash h-100">
       <div className="search">
         <input
           type="text"
@@ -46,7 +46,7 @@ export default function DashNav(){
             <p>I am Grut</p>
           </div>
           <div className="spans">
-            <span className="span3">3</span>
+            <span className="span3">03</span>
             <span className="span4">90</span>
           </div>
         </div>
