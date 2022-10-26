@@ -98,7 +98,9 @@
 }
 
 .Navbar-Dash{
-  background-color: rgb(141, 165, 175);
+  background-color: #EEEEEE;
+  padding: 20px;
+  color: #00ADB5;
 }
 
 .icon{
@@ -185,5 +187,9 @@
 
 .date, .due{
   font-size: .8rem;
+}
+
+.dash-home{
+  background: #393E46;
 }
 

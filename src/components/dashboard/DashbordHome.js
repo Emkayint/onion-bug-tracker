@@ -6,7 +6,7 @@ import EfficiencyCard from "./efficiency-card";
 export default function DashboardHome() {
 
   return (
-    <div className="container-main h-100 bg-white">
+    <div className="container-main h-100 dash-home">
       <div className="header-home d-flex align-items-center justify-content-between px-5">
         <div className="text">My Bugs</div>
         <div className="btn btn-primary csm-button">Report A new Bug</div>

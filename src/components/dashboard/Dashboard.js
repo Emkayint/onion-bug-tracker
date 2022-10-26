@@ -6,7 +6,7 @@ import DashNav from "./DashNav";
 export default function Dashboard(){
 
   return (
-    <div className="container-main h-100">
+    <div className="container-main h-100 dash-home">
       <div className="row h-100">
         <div className="col-md-3 col-lg-3 p-0">
           <DashNav />
