@@ -18,13 +18,22 @@ export default function DashboardHome() {
         <EfficiencyCard text="Hello World" number="30" color="#333" />
       </div>
       <div className="container-main bugs p-3">
-        
         <div className="titles row p-3">
-          <div className="col-lg-4 col-sm-5 col-md-3">BUG</div>
-          <div className="col-lg-2">STATUS</div>
-          <div className="col-lg-2">CREATED</div>
-          <div className="col-lg-2">DUE</div>
-          <div className="col-lg-2">REPORTER</div>
+          <div className="col-lg-4 col-sm-5 col-md-3">
+            <p className="">BUG</p>
+          </div>
+          <div className="col-lg-2">
+            <p className="text-center">STATUS</p>
+          </div>
+          <div className="col-lg-2">
+            <p className="text-center">CREATED</p>
+          </div>
+          <div className="col-lg-2">
+            <p className="text-center">DUE</p>
+          </div>
+          <div className="col-lg-2">
+            <p className="text-center">REPORTER</p>
+          </div>
         </div>
         <BugPage />
         <BugPage />
