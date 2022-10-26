@@ -1,0 +1,18 @@
+
+.Navbar{
+  background-color: #9A1663;
+}
+
+a{
+  display: block;
+}
+
+.Navbar header{
+  background-color: rgba(0, 0, 0, .5);
+  height: 10%;
+  display: flex;
+  align-items: center;
+  color: wheat;
+  font-size: 1.3rem;
+  justify-content: center;
+}
