@@ -146,6 +146,8 @@
 .titles{
   font-size: .8rem;
   font-weight: 600;
+  z-index: 10;
+
 }
 
 .bug-name{
@@ -167,4 +169,12 @@
 .bugs{
   overflow-y: auto;
   height: 60vh;
+}
+
+.none{
+  display: none;
+}
+
+.block{
+  display: block;
 }

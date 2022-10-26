@@ -18,6 +18,7 @@ export default function DashboardHome() {
         <EfficiencyCard text="Hello World" number="30" color="#333" />
       </div>
       <div className="container-main bugs p-3">
+        
         <div className="titles row p-3">
           <div className="col-lg-4 col-sm-5 col-md-3">BUG</div>
           <div className="col-lg-2">STATUS</div>
