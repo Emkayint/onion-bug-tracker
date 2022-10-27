@@ -1,10 +1,14 @@
 import React from "react";
 import { useState } from "react";
+import CustomLinks from "./CustomLinks";
 
 
 // navigation page for the dashboard
-export default function DashNav(){
+export default function DashNav({projects}){
   const [search, setSearch] = useState("")
+  console.log(projects)
+
+  const projectsDisplay = projects.map(project => {return <CustomLinks project = {project}/>})
   return (
     <div className="container-main Navbar-Dash h-100">
       <div className="search">
@@ -18,7 +22,6 @@ export default function DashNav(){
       <header className="header-dashboard">
         <div className="py-3 p px-3">PROJECTS</div>
         <div className="">
-          <span className="span1 mr-3"></span>
           <span className="span2"></span>
         </div>
       </header>
@@ -29,37 +32,10 @@ export default function DashNav(){
             <p>All Projects</p>
           </div>
           <div className="spans">
-            <span className="span3">10</span>
-            <span className="span4">09</span>
+            <span className="span3">{projects.length < 10 ? `0${projects.length}` : `${projects.length}`}</span>
           </div>
         </div>
-        <div className="nav-buttons">
-          <div className="div">
-            <p>Doctor Strange</p>
-          </div>
-          <div className="spans">
-            <span className="span3">30</span>
-            <span className="span4">01</span>
-          </div>
-        </div>
-        <div className="nav-buttons">
-          <div className="div">
-            <p>I am Grut</p>
-          </div>
-          <div className="spans">
-            <span className="span3">03</span>
-            <span className="span4">90</span>
-          </div>
-        </div>
-        <div className="nav-buttons">
-          <div className="div">
-            <p>Robo Taxi</p>
-          </div>
-          <div className="spans">
-            <span className="span3">23</span>
-            <span className="span4">08</span>
-          </div>
-        </div>
+        {projectsDisplay}
       </div>
     </div>
   );

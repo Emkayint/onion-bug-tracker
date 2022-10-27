@@ -11,16 +11,17 @@ function App() {
   useEffect(() => {
     fetch("http://localhost:4000/me", {
       method: "GET",
-      Authorization: `Bearer ${token}`
-    })
-    .then(r => {
-      if(r.ok){
-        r.json().then(r => {
-          setUser(user)
-        })
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    }).then((r) => {
+      if (r.ok) {
+        r.json().then((r) => {
+          setUser(r);
+        });
       }
-    })
-  })
+    });
+  }, [token, setUser]);
   return (
     <div className="App">
 
