@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 
+
+// navigation page for the dashboard
 export default function DashNav(){
   const [search, setSearch] = useState("")
   return (

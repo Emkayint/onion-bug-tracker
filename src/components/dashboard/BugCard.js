@@ -1,4 +1,7 @@
 import {BsChatDots} from "react-icons/bs"
+
+
+// This is responsible for displaying indivual card with number of comments available
 export default function BugCard(){
   return (
     <div className="container-main card bug-card px-2 pt-2 mb-2">

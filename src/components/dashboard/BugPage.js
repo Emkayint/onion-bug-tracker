@@ -1,6 +1,9 @@
 import { useState } from "react";
 import {BsPlusLg} from "react-icons/bs"
 import BugCard from "./BugCard";
+
+// Is responsible for displaying project and issues opened for each
+// project
 export default function BugPage(){
   const [display, setDisplay] = useState(false)
 

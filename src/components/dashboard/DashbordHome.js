@@ -3,7 +3,8 @@ import React from "react";
 import BugPage from "./BugPage";
 import EfficiencyCard from "./efficiency-card";
 
-export default function DashboardHome() {
+//  main part of the dashboard 
+export default function DashBoardHome() {
 
   return (
     <div className="container-main h-100 dash-home">

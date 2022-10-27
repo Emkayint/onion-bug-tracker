@@ -1,8 +1,9 @@
 import React from "react";
 import "./Dashboard.css"
-import DashboardHome from "./DashbordHome";
+import DashBoardHome from "./DashbordHome";
 import DashNav from "./DashNav";
 
+// This is the main dashboard responsible for handling search, filtered data and bug issues 
 export default function Dashboard(){
 
   return (
@@ -12,7 +13,7 @@ export default function Dashboard(){
           <DashNav />
         </div>
         <div className="col-md-9 col-lg-9 p-0">
-          <DashboardHome />
+          <DashBoardHome />
         </div>
       </div>
     </div>
