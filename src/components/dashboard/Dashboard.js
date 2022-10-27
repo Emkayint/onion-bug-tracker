@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
+import Issue from "../issues/issue";
 import "./Dashboard.css"
 import DashBoardHome from "./DashbordHome";
 import DashNav from "./DashNav";
@@ -34,7 +35,8 @@ export default function Dashboard(){
           <DashNav projects = {projects} setActiveProject = { setActiveProject }/>
         </div>
         <div className="col-md-10 col-lg-9 p-0">
-          <DashBoardHome projects = {projects} activeProject = {activeProject}/>
+          <Issue />
+          {/* <DashBoardHome projects = {projects} activeProject = {activeProject}/> */}
         </div>
       </div>
     </div>

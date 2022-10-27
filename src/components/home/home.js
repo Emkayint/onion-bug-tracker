@@ -16,8 +16,7 @@ export default function Home() {
           <Navbar />
         </div>
         <div className="col-sm-12 col-md-9 col-lg-10 h-100">
-
-          <Issue />
+          <Dashboard />
         </div>
       </div>
     </div>

@@ -30,7 +30,7 @@ export default function Issue() {
   return (
     <div className="container-main h-100">
       <div className="container-main issue-header">
-        Issue <span className="span-issue">#{issue.id}</span> Comments
+        {issue ? issue.project.name : ""} <span className="span-issue">Issue #{issue.id}</span> Comments
         <button className="btn back-btn"> Dashboard </button>
       </div>
       <div className="container-main px-3">
