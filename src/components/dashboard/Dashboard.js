@@ -9,6 +9,7 @@ export default function Dashboard(){
 
   const token = localStorage.getItem("jwt")
   const [projects, setProject] = useState([])
+  const [activeProject, setActiveProject] = useState(0)
   useEffect(() => {
     fetch("http://localhost:4000/projects", {
       method: "GET",
@@ -30,10 +31,10 @@ export default function Dashboard(){
     <div className="container-main h-100 dash-home">
       <div className="row h-100">
         <div className="col-md-2 col-lg-3 p-0">
-          <DashNav projects = {projects}/>
+          <DashNav projects = {projects} setActiveProject = { setActiveProject }/>
         </div>
         <div className="col-md-10 col-lg-9 p-0">
-          <DashBoardHome />
+          <DashBoardHome projects = {projects} activeProject = {activeProject}/>
         </div>
       </div>
     </div>

@@ -1,10 +1,36 @@
 
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
+import { useContext } from "react";
+import { AppContext } from "../../context/AppContext";
 import BugPage from "./BugPage";
 import EfficiencyCard from "./efficiency-card";
 
-//  main part of the dashboard 
-export default function DashBoardHome() {
+export default function DashBoardHome({projects}) {
+
+  // const {active} = useContext(AppContext)
+  // const token = localStorage.getItem("jwt")
+  // const [project, setProject] = useState([]) 
+  // useEffect(() => {
+  //   fetch(`http://localhost:4000/projects/${active}`, {
+  //     method: "GET", 
+  //     headers: {
+  //       Authorization: `Bearer ${token}`
+  //     }
+  //   })
+  //   .then(r => {
+  //     r.json().then(r => {
+  //       setProject(r)
+  //     })
+  //   })
+  // }, [])
+
+  const issuesTodisplay = projects.map((project) => {
+    return <BugPage project={project} />
+  })
+
+  
 
   return (
     <div className="container-main h-100 dash-home">
@@ -37,9 +63,11 @@ export default function DashBoardHome() {
             <p className="text-center">REPORTER</p>
           </div>
         </div>
-        <BugPage />
-        <BugPage />
-        <BugPage />
+
+        {issuesTodisplay}
+        {/* <BugPage /> */}
+        {/* <BugPage /> */}
+        {/* <BugPage /> */}
       </div>
     </div>
   );

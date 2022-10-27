@@ -1,9 +1,13 @@
 import React from "react";
 
 
-const CustomLinks = ({project}) => {
+const CustomLinks = ({project, setActiveProject}) => {
+
+  function handleActive(e) {
+    setActiveProject(e);
+  }
   return (
-    <div className="nav-buttons">
+    <div className="nav-buttons" onClick={() => handleActive(project.id)}>
       <div className="div">
         <p>{project.name}</p>
       </div>

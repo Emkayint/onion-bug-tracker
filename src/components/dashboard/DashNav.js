@@ -4,11 +4,12 @@ import CustomLinks from "./CustomLinks";
 
 
 // navigation page for the dashboard
-export default function DashNav({projects}){
+export default function DashNav({projects, setActiveProject}){
   const [search, setSearch] = useState("")
   console.log(projects)
 
-  const projectsDisplay = projects.map(project => {return <CustomLinks project = {project}/>})
+   
+  const projectsDisplay = projects.map(project => {return <CustomLinks project = {project} key={project.id} setActiveProject = { setActiveProject }/>})
   return (
     <div className="container-main Navbar-Dash h-100">
       <div className="search">
