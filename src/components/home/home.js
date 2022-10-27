@@ -1,5 +1,6 @@
 import React from "react";
 import Dashboard from "../dashboard/Dashboard";
+import Issue from "../issues/issue";
 import Navbar from "../navbar/Nabar";
 import "./home.css"
 
@@ -16,8 +17,7 @@ export default function Home() {
         </div>
         <div className="col-sm-12 col-md-9 col-lg-10 h-100">
 
-          {/* Dashboard  */}
-          <Dashboard />
+          <Issue />
         </div>
       </div>
     </div>
