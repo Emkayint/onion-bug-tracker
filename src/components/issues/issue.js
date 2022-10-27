@@ -34,20 +34,7 @@ export default function Issue() {
         <button className="btn back-btn"> Dashboard </button>
       </div>
       <div className="container-main px-3">
-        <div className="row">
-          <div className="col-sm-2 col-md-2 col-lg-2">
-            <div className="container-main bg-dark">
-              <div className="issue-info py-3 text-center">
-                Project {issue.project.name}
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-10 col-md-10 col-lg-10">
-            <div className="container-main">
-              
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
   );
