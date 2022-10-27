@@ -9,10 +9,10 @@ export default function Dashboard(){
   return (
     <div className="container-main h-100 dash-home">
       <div className="row h-100">
-        <div className="col-md-3 col-lg-3 p-0">
+        <div className="col-md-2 col-lg-3 p-0">
           <DashNav />
         </div>
-        <div className="col-md-9 col-lg-9 p-0">
+        <div className="col-md-10 col-lg-9 p-0">
           <DashBoardHome />
         </div>
       </div>
