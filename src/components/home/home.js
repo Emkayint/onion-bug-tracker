@@ -1,6 +1,5 @@
 import React from "react";
 import Dashboard from "../dashboard/Dashboard";
-import Issue from "../issues/issue";
 import Navbar from "../navbar/Nabar";
 import "./home.css"
 

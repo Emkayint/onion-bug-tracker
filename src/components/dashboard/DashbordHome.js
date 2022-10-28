@@ -1,11 +1,6 @@
 
 import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
-import { useContext } from "react";
-import { AppContext } from "../../context/AppContext";
 import BugPage from "./BugPage";
-import EfficiencyCard from "./efficiency-card";
 
 export default function DashBoardHome({projects}) {
 
