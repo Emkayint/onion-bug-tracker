@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 // This is responsible for displaying indivual card with number of comments available
 export default function BugCard({issue}){
   return (
-    <NavLink path={`issue${issue.id}`}>
+    <NavLink to={`/issue/${issue.id}`}>
       <div className="container-main card bug-card px-2 py-2 mb-2">
         <div className="row">
           <div className="col-lg-1 col-sm-1 col-md-1">

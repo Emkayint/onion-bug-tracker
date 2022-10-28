@@ -3,12 +3,12 @@ import { useEffect } from "react";
 
 import image from "./download.png"
 
-export default function CommentCard(){
+export default function CommentCard({id}){
   const token = localStorage.getItem("jwt")
 
   const [comment, setComment] = useState('')
   useEffect(() => {
-    fetch(`http://localhost:4000/comments/2`, {
+    fetch(`http://localhost:4000/comments/${id}`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`
@@ -18,11 +18,10 @@ export default function CommentCard(){
       if(r.ok){
         r.json().then(r => {
           setComment(r)
-          console.log(r)
         })
       }
     })
-  }, [token, setComment])
+  }, [token, setComment, id])
 
   const date = new Date(comment.created_at)
 
