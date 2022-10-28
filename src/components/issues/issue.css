@@ -18,3 +18,57 @@
   float: right;
   margin-right: 50px;
 }
+
+/* Comment Card */
+.comment-card{
+  background: #475466;
+  color: #EEEEEE;
+}
+.comment-header img{
+  height: 40px;
+  border-radius: 50%;
+}
+
+.comment-user{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #FC5185;
+}
+
+.text-comment{
+  color: #EEEEEE;
+}
+.date-created{
+  display: block;
+  padding-bottom: 10px;
+  float: right;
+}
+.date-created span{
+  float: right;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.date-created i{
+  float: right;
+}
+
+.comment-section{
+  overflow-y: auto;
+  height: 65vh;
+  background-color: black;
+}
+
+.input{
+  height: 40px;
+  width: 70%;
+  padding-left: 10px;
+  background-color: rgba(0, 0, 0, .6);
+  border: none;
+  color: whitesmoke;
+}
+
+.submit{
+  height: 40px;
+  color: white;
+  background-color: #FC5185;
+  border: none;
+}

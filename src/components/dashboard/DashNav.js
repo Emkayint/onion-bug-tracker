@@ -26,7 +26,7 @@ export default function DashNav({projects, setActiveProject}){
           <span className="span2"></span>
         </div>
       </header>
-      <hr  className="bg-secondary"/>
+      {/* <hr  className="bg-secondary"/> */}
       <div className="projects px-3 py-2">
         <div className="nav-buttons">
           <div className="div">
