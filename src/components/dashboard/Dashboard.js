@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
+import { Routes } from "react-router-dom";
 import Issue from "../issues/issue";
 import "./Dashboard.css"
 import DashBoardHome from "./DashbordHome";
@@ -35,8 +36,7 @@ export default function Dashboard(){
           <DashNav projects = {projects} setActiveProject = { setActiveProject }/>
         </div>
         <div className="col-md-10 col-lg-9 p-0">
-          <Issue />
-          {/* <DashBoardHome projects = {projects} activeProject = {activeProject}/> */}
+          <DashBoardHome projects = {projects} activeProject = {activeProject}/>
         </div>
       </div>
     </div>

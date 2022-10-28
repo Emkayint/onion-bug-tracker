@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from "./components/home/home"
+import Issue from './components/issues/issue';
 import Login from './components/Login/login';
 import { AppContext } from './context/AppContext';
 function App() {
@@ -27,6 +28,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={user ? <Home /> : <Login />} />
+        <Route path = '/issue/:id' element = {<Issue />} />
       </Routes>
     </div>
   );

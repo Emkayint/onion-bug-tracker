@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useEffect } from "react";
 
+import image from "./download.png"
+
 export default function CommentCard(){
   const token = localStorage.getItem("jwt")
 
@@ -27,7 +29,7 @@ export default function CommentCard(){
   return (
     <div className="container-main card mb-3 p-2  comment-card ">
       <div className="comment-header">
-        <img src="./download.png" alt="nei" />{" "}
+        <img src={image} alt="nei" />{" "}
         <span className="comment-user px-2">
           {comment ? comment.user.username : ""}
         </span>
