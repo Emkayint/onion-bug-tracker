@@ -1,19 +1,17 @@
 .Navbar{
-  background-color: rgba(0, 0, 0, .3);
-  color: #FC5185;
+  color: gray;
+  font-size: 1.3rem;
+  border-right: 2px solid rgb(202, 202, 202);
+  box-shadow: 4px 4px 4px 5px gray;
 }
 
 a{
   display: block;
-  color: #FC5185;
+  color: gray;
 }
 
 .Navbar header{
-  background-color: rgba(0, 0, 0, .5);
-  height: 15%;
-  display: flex;
   align-items: center;
-  color: #FC5185;
   font-size: 1.3rem;
   justify-content: center;
 }

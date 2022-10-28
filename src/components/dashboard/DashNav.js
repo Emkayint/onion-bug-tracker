@@ -11,8 +11,8 @@ export default function DashNav({projects, setActiveProject}){
    
   const projectsDisplay = projects.map(project => {return <CustomLinks project = {project} key={project.id} setActiveProject = { setActiveProject }/>})
   return (
-    <div className="container-main Navbar-Dash h-100">
-      <div className="search">
+    <div className="container-main Navbar-Dash px-2 h-100">
+      <div className="search px-1 py-2">
         <input
           type="text"
           value={search}
@@ -27,10 +27,10 @@ export default function DashNav({projects, setActiveProject}){
         </div>
       </header>
       {/* <hr  className="bg-secondary"/> */}
-      <div className="projects px-3 py-2">
+      <div className="projects pl-3 py-4">
         <div className="nav-buttons">
           <div className="div">
-            <p>All Projects</p>
+            <p>Total</p>
           </div>
           <div className="spans">
             <span className="span3">{projects.length < 10 ? `0${projects.length}` : `${projects.length}`}</span>

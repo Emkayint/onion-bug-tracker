@@ -10,9 +10,7 @@ export default function Home() {
   return (
     <div className="container-main hero h-100">
       <div className="row h-100">
-        <div className="col-sm-12 col-md-3 col-lg-2 h-100 p-0">
-
-          {/* Main NavBar  */}
+        <div className="col-sm-12 col-md-2 col-lg-2 h-100 p-0">
           <Navbar />
         </div>
         <div className="col-sm-12 col-md-9 col-lg-10 h-100">

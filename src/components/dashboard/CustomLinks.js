@@ -7,7 +7,7 @@ const CustomLinks = ({project, setActiveProject}) => {
     setActiveProject(e);
   }
   return (
-    <div className="nav-buttons" onClick={() => handleActive(project.id)}>
+    <div className="nav-buttons mt-5" onClick={() => handleActive(project.id)}>
       <div className="div">
         <p>{project.name}</p>
       </div>

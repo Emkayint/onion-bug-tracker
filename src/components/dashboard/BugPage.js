@@ -1,11 +1,11 @@
 import { useState } from "react";
-import {BsPlusLg} from "react-icons/bs"
+import {BsPlusLg, BsSubtract} from "react-icons/bs"
 import BugCard from "./BugCard";
 
 // Is responsible for displaying project and issues opened for each
 // project
 export default function BugPage({project}){
-  const [display, setDisplay] = useState(false)
+  const [display, setDisplay] = useState(true)
   console.log(project)
 
   const issuesTodisplay = project.issues.map(issue => {
@@ -16,14 +16,12 @@ export default function BugPage({project}){
     setDisplay(!display)
   }
   return (
-    <div className="container-main ">
+    <div className="container-main bug-home">
       <header className="bug-title py-2" onClick={handleDisplay}>
-        <span>
-          <BsPlusLg />
-        </span>
+        <span>{display ? <BsSubtract /> : <BsPlusLg />}</span>
         <span className="px-3">{project.name}</span>
       </header>
-      <div className={display ? "container-main block": "container-main none"}>
+      <div className={display ? "container-main block" : "container-main none"}>
         {issuesTodisplay}
       </div>
     </div>
