@@ -5,6 +5,7 @@ import './App.css';
 import Home from "./components/home/home"
 import Issue from './components/issues/issue';
 import Login from './components/Login/login';
+import Profile from './components/profile/Profile';
 import { AppContext } from './context/AppContext';
 function App() {
   const {user, setUser} = useContext(AppContext)
@@ -25,10 +26,10 @@ function App() {
   }, [token, setUser]);
   return (
     <div className="App">
-
       <Routes>
         <Route path="/" element={user ? <Home /> : <Login />} />
-        <Route path = '/issue/:id' element = {<Issue />} />
+        <Route path="/issue/:id" element={user ? <Issue /> : <Login />} />
+        <Route path="/profile" element={user ? <Profile /> : <Login />} />
       </Routes>
     </div>
   );

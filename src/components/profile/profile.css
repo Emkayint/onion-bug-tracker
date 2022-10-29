@@ -1,0 +1,34 @@
+.profile-card{
+  background-color: #f1f1f1;
+}
+
+.profile-card img{
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.profile-header{
+  background-color: red;
+  height: 35%;
+  background-image: url("./bg4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+[class*='profile-info-card-']{
+  height: 30vh;
+  overflow: hidden;
+  box-shadow: 4px 4px 4px gray;
+}
+
+.profile-info-card-1{
+  background-color: aqua;
+}
+
+.profile-info-card-2{
+  background-color: beige;
+}
+
+.profile-info-card-3{
+  background: yellow;
+}
