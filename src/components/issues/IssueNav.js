@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import {MdSupport} from "react-icons/md"
 import Card from "./card";
 
 
@@ -9,7 +8,7 @@ export default function IssueNav(){
   const token = localStorage.getItem("jwt") 
   const [comments, setComments] = useState([]) 
   useEffect(() => {
-    fetch("http://localhost:4000/mycomments/", {
+    fetch("http://localhost:4000/comments/", {
       method: "GET", 
       headers: {
         Authorization: `Bearer ${token}`
@@ -29,12 +28,11 @@ export default function IssueNav(){
   })
 
   return (
-    <div className="container-main">
+    <div className="container-main h-100">
       <div className="all-issues p-3">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <div className="issue-nav-header text-center">Recent Comments</div>
+        <hr />
+        {commentsTodisplay}
       </div>
     </div>
   );

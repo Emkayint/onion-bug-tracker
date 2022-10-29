@@ -124,12 +124,22 @@
 /*  Issue Nav area */
 .all-issues{
   overflow-y: auto;
-  height: 100vh;
+  height: 90vh;
+}
+
+.issue-nav-header{
+  height: 10%;
+  background: rgba(12, 24, 93, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
 }
 
 .issue-card{
   background-color: #fff;
   box-shadow: 4px 4px 4px gray;
+
 }
 
 .all-issues::-webkit-scrollbar{
@@ -139,19 +149,37 @@
   float: left;
   width: fit-content;
   font-size: .8rem;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .project-name{
   font-size: 1.3rem;
   font-family: sans-serif;
-  color : gray;
+  color : rgb(208, 206, 206);
 }
 
 .project-name span{
-  color: blue;
   font-size: .9rem;
 }
 
-.comment-message{
-  
+.project-name a{
+  color: blue;
+  display: inline;
+}
+
+
+
+.open{
+  background-color: #82CD47;
+  color: white;
+}
+
+.pending{
+  background-color: #FD841F;
+  color: white;
+}
+
+.closed {
+  background-color: #EB1D36;
+  color: white;
 }
