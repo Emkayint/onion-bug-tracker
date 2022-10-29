@@ -30,7 +30,7 @@ export default function IssueNav(){
   return (
     <div className="container-main h-100">
       <div className="all-issues p-3">
-        <div className="issue-nav-header text-center">Recent Comments</div>
+        <div className="issue-nav-header text-center">My Recent Comments</div>
         <hr />
         {commentsTodisplay}
       </div>

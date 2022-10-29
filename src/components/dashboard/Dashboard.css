@@ -181,7 +181,7 @@ a:hover{
 /* Bug card styling BugCard.js */
 
 .bug-card{
-  
+  box-shadow: 4px 4px 4px gray;
   background-color: #3e637c;
   color: rgb(0, 255, 255);
 }

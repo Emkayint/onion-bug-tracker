@@ -12,9 +12,11 @@
   height: 15%;
   justify-content: center;
   padding-top: 3%;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   background-color: rgba(12, 24, 93, 0.4);
+  color: rgb(89, 86, 86);
+  font-size: 1.3rem;
 }
 
 .comment-top{
@@ -134,6 +136,8 @@
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(89, 86, 86);
 }
 
 .issue-card{

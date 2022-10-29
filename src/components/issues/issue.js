@@ -73,11 +73,7 @@ export default function Issue() {
               </span>{" "}
               Comments
             </div>
-            <NavLink to="/">
-              <button className="btn back-btn">
-                <BsHouseDoorFill /> Home
-              </button>
-            </NavLink>
+            
           </div>
           <div className="container-main p-5 comment-section">
             {commentToDisplay}

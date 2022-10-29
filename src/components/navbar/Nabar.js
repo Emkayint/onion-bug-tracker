@@ -8,7 +8,7 @@ export default function Navbar(){
   return (
     <div className="container-main Navbar h-100">
       <div className="container-main px-3 py-4">
-        <NavLink to="/hello">
+        <NavLink to="/">
           <p className="py-4">
             <span className="pr-3">
               <BsFlagFill />
