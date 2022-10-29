@@ -23,6 +23,7 @@
 .header-dashboard{
   display: flex;
   align-items: center;
+  background-color: #B1B2FF;
 }
 
 .header-dashboard .p{
@@ -45,21 +46,26 @@
 
 .projects{
   border-radius: 10px;
-  background-color: rgba(152, 187, 176, 0.2);
   color: rgb(46, 44, 44);
+  height: 70vh;
+  overflow-y: auto;
+}
+
+.projects::-webkit-scrollbar{
+  display: none;
 }
 
 .nav-buttons{
   display: flex;
   align-items: center;
-  padding: 10px 10px;
+  padding: 10% 10%;
+  box-shadow: 4px 4px 4px gray;
+  background-color:#EEF1FF;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .nav-buttons:hover{
-  background-color: white;
-  border-bottom-left-radius: 9px;
-  border-top-left-radius: 9px;
+  background-color:  #B1B2FF;
   color: gray;
 }
 .span3{
@@ -85,17 +91,10 @@
 /* Navigation Seach area */
 
 .search{
-  height: 10%;
+  align-items: center;
+  justify-content: center;
 }
-.search input{
-  border-radius: 5px;
-  border: none;
-  background-color: rgba(47, 158, 125, .2);
-  height: 100%;
-  padding-left: 10px;
-  font-size: 1rem;
-  width: 100%;
-}
+
 
 /* Dahbord Hero or Home section // main area */
 
