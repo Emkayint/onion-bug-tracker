@@ -5,13 +5,13 @@ import { NavLink, useParams } from "react-router-dom";
 import CommentCard from "./commentCard";
 import "./issue.css";
 import {BsHouseDoorFill} from "react-icons/bs"
-
+import Navbar from "../navbar/Nabar";
+import IssueNav from "./IssueNav";
 export default function Issue() {
   const { id } = useParams();
   const [issue, setIssue] = useState("");
   const token = localStorage.getItem("jwt");
   const [message, setMessage] = useState("");
-  console.log(issue);
 
   const commentToDisplay = issue ? issue.comments.map(comment => {
     return <CommentCard id = {comment.id} key = {comment.id}/>
@@ -51,7 +51,7 @@ export default function Issue() {
     }).then((r) => {
       if (r.ok) {
         r.json().then((r) => {
-          setIssue()
+          setIssue(r)
           setMessage("");
         });
       }
@@ -61,7 +61,10 @@ export default function Issue() {
   return (
     <div className="container-main card issue h-100">
       <div className="row h-100">
-        <div className="col-sm-2 col-lg-6 col-md-6 p-3 center">
+        <div className="col-sm-12 col-md-3 col-lg-3">
+          <Navbar />
+        </div>
+        <div className="col-sm-2 col-lg-6 col-md-6 p-3 comment-top">
           <div className="container-main issue-header d-flex justify-content-around align-items-center">
             <div className="header-items">
               {issue ? issue.project.name : ""}{" "}
@@ -79,7 +82,7 @@ export default function Issue() {
           <div className="container-main p-5 comment-section">
             {commentToDisplay}
           </div>
-          <div className="px-5 py-4 new-comment ">
+          <div className="px-5 py-3 new-comment ">
             <form onSubmit={handleSubmit}>
               <input
                 type="text"
@@ -91,6 +94,9 @@ export default function Issue() {
               <input type="submit" value="comment" className="submit px-2" />
             </form>
           </div>
+        </div>
+        <div className="col-sm-12 col-md-3 col-lg-3">
+          <IssueNav />
         </div>
       </div>
     </div>

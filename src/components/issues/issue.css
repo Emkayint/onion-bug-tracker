@@ -1,5 +1,6 @@
 .issue{
-  background-color: rgba(0, 0, 0, .3);
+  background-color: white;
+  overflow: hidden;
 }
 .center{
   float: unset;
@@ -8,13 +9,16 @@
   height: 100%;
 }
 .issue-header{
-  color: white;
-  background-color: rgba(0, 0, 0, .6);
   height: 15%;
   justify-content: center;
   padding-top: 3%;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
+  background-color: rgba(12, 24, 93, 0.4);
+}
+
+.comment-top{
+  background-color: rgba(152, 187, 176, 0.2);
 }
 
 .header-items{
@@ -27,13 +31,14 @@
 
 .back-btn{
   font-size: 20px;
-  background-color: #FC5185;
+  background-color: rgba(0, 0, 0, .4);
+  color: white;
 }
 
 /* Comment Card */
 .comment-card{
-  background: #475466;
-  color: #EEEEEE;
+  color: #646f7e;
+  background: white;
 }
 .comment-header img{
   height: 40px;
@@ -46,7 +51,7 @@
 }
 
 .text-comment{
-  color: #EEEEEE;
+  color:gray;
 }
 .date-created{
   display: block;
@@ -66,12 +71,40 @@
   overflow-y: auto;
   height: 60vh;
   width: 100%;
-  background-color: black;
+  /* background-color: rgb(212, 200, 200); */
 }
+
+.comment-section::-webkit-scrollbar{
+  width: 5px;
+}
+
+
+.comment-section::-webkit-scrollbar-track {
+  background-color: rgba(12, 24, 93, 0.4);
+
+}
+
+/* Handle */
+.comment-section::-webkit-scrollbar-thumb {
+  background: white;
+  /* border-radius: 5px; */
+}
+
+/* Handle on hover */
+.comment-section::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(12, 24, 93, 0.4);
+  background: #555;
+}
+
+.new-comment{
+  background-color: rgba(12, 24, 93, 0.4);
+  height: 100%;
+}
+
 
 .input{
   height: 40px;
-  width: 70%;
+  width: 80%;
   padding-left: 10px;
   background-color: rgba(0, 0, 0, .6);
   border: none;
@@ -80,7 +113,45 @@
 
 .submit{
   height: 40px;
+  width: 20%;
   color: white;
   background-color: #FC5185;
   border: none;
+  float: right;
+}
+
+
+/*  Issue Nav area */
+.all-issues{
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.issue-card{
+  background-color: #fff;
+  box-shadow: 4px 4px 4px gray;
+}
+
+.all-issues::-webkit-scrollbar{
+  display: none;
+}
+.float-right{
+  float: left;
+  width: fit-content;
+  font-size: .8rem;
+}
+
+.project-name{
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  color : gray;
+}
+
+.project-name span{
+  color: blue;
+  font-size: .9rem;
+}
+
+.comment-message{
+  
 }
