@@ -1,7 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css"
-import  {BsBugFill,  BsLayersHalf, BsFlagFill, BsGearFill} from "react-icons/bs" 
+import {
+  BsBugFill,
+  BsFlagFill,
+  BsGearFill,
+  BsPersonCircle,
+} from "react-icons/bs"; 
 
 export default function Navbar(){
 
@@ -25,12 +30,12 @@ export default function Navbar(){
           </p>
         </NavLink>
 
-        <NavLink to="/hello">
+        <NavLink to="/profile">
           <p className="py-4">
             <span className="pr-3">
-              <BsLayersHalf />
+              <BsPersonCircle />
             </span>
-            Feed
+            Profile
           </p>
         </NavLink>
         <div className="container-main h-100 settings py-4">
