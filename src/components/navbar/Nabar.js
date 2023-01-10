@@ -21,7 +21,7 @@ export default function Navbar(){
             Milestones
           </p>
         </NavLink>
-        <NavLink to="/hello">
+        <NavLink to="/">
           <p className="py-4">
             <span className="pr-3">
               <BsBugFill />
