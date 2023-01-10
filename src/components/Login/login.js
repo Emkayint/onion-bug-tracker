@@ -15,7 +15,7 @@ export default function Login () {
       password: password
     }
 
-    fetch("http://localhost:4000/login", {
+    fetch("https://tracker-production.up.railway.app/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

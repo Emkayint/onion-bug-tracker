@@ -11,7 +11,7 @@ export default function Dashboard(){
   const [projects, setProject] = useState([])
   const [activeProject, setActiveProject] = useState(0)
   useEffect(() => {
-    fetch("http://localhost:4000/projects", {
+    fetch("https://tracker-production.up.railway.app/projects", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`

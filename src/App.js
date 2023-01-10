@@ -11,7 +11,7 @@ function App() {
   const {user, setUser} = useContext(AppContext)
   const token = localStorage.getItem("jwt") 
   useEffect(() => {
-    fetch("http://localhost:4000/me", {
+    fetch("https://tracker-production.up.railway.app/me", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,

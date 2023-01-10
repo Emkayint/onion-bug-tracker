@@ -1,10 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { NavLink, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 import CommentCard from "./commentCard";
 import "./issue.css";
-import {BsHouseDoorFill} from "react-icons/bs"
 import Navbar from "../navbar/Nabar";
 import IssueNav from "./IssueNav";
 export default function Issue() {
@@ -18,7 +17,7 @@ export default function Issue() {
   }) : ""
 
   useEffect(() => {
-    fetch(`http://localhost:4000/issues/${id}`, {
+    fetch(`https://tracker-production.up.railway.app/issues/${id}`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -40,7 +39,7 @@ export default function Issue() {
       issue_id: issue.id,
     };
 
-    fetch("http://localhost:4000/comments", {
+    fetch("https://tracker-production.up.railway.app/comments", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token}`,

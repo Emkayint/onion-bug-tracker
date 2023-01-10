@@ -8,7 +8,7 @@ export default function CommentCard({id}){
 
   const [comment, setComment] = useState('')
   useEffect(() => {
-    fetch(`http://localhost:4000/comments/${id}`, {
+    fetch(`https://tracker-production.up.railway.app/comments/${id}`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`

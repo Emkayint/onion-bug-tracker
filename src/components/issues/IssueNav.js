@@ -8,7 +8,7 @@ export default function IssueNav(){
   const token = localStorage.getItem("jwt") 
   const [comments, setComments] = useState([]) 
   useEffect(() => {
-    fetch("http://localhost:4000/comments/", {
+    fetch("https://tracker-production.up.railway.app/comments/", {
       method: "GET", 
       headers: {
         Authorization: `Bearer ${token}`
